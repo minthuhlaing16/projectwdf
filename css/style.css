@@ -4,7 +4,7 @@
   --success-color: #2ecc71;
   --primary-color: #3498db;
   --warning-color: #f39c12;
-  --danger-color: #e74c3c;
+  --danger-color: #e74d3c;
   --light-color: #ecf0f1;
   --dark-color: #2c3e50;
   --accent-color: #f39c12;
@@ -104,6 +104,54 @@ h6 {
 /* ? End navbar */
 
 /* ? Start banner */
+.banners {
+  height: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-contents {
+  color: #ffffff;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-contents h1 {
+  /* font-size: 16px; */
+  font-size: 3.5rem;
+}
+
+.banner-contents h2 {
+  font-weight: 300;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.banner-contents p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.btn-warning {
+  background-color: var(--accent-color);
+  border: none;
+  font-weight: 600;
+  padding: 12px 30px;
+
+  transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #bb8829;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.5);
+}
 /* ? End banner */
 
 /* ? End header Section */
@@ -134,9 +182,65 @@ h6 {
 /* ? End Modal Box */
 
 /* ? Start Animation for banner */
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animates {
+  animation: fadeup 0.8s ease forwards;
+}
 
+.display-1 {
+  animation-delay: 0.2s;
+}
+
+.display-2 {
+  animation-delay: 0.4s;
+}
+
+.animate-btns {
+  animation-delay: 0.6s;
+}
 /* ? End Animation for banner */
 
 /* ? Start Responsive Adjustments */
 
 /* ? End Responsive Adjustments */
+
+/* ? Start Responsive Adjustment */
+@media (max-width: 576px) {
+  .banner-contents h1 {
+    font-size: 1.8rem;
+  }
+  .banner-contents h2 {
+    font-size: 1.5rem;
+  }
+  .banner-contents p {
+    font-size: 1rem;
+  }
+  .banner-contents .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .banners {
+    height: auto;
+    min-height: 75vh;
+  }
+
+  .banner-contents h1 {
+    font-size: 2rem;
+  }
+
+  .banner-contents h2 {
+    font-weight: 200;
+  }
+}
+/* ? End Responsive Adjustment */
