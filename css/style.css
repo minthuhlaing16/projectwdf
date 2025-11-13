@@ -178,7 +178,20 @@ h6 {
 /* ? End footer Section */
 
 /* ? Start Modal Box */
-
+/* ? Start get in touch modal */
+.modal-header {
+  background: linear-gradient(130deg, var(--primary-color), var(--secondary-color));
+  color: #ffffff;
+  border: none;
+}
+.modal-body {
+  padding: 30px;
+}
+.modal-footer {
+  border: none;
+  background-color: #f9f9f9;
+}
+/* ? End get in touch modal */
 /* ? End Modal Box */
 
 /* ? Start Animation for banner */
@@ -196,11 +209,11 @@ h6 {
   animation: fadeup 0.8s ease forwards;
 }
 
-.display-1 {
+.delayones {
   animation-delay: 0.2s;
 }
 
-.display-2 {
+.delaytwos {
   animation-delay: 0.4s;
 }
 

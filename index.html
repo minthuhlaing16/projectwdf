@@ -71,10 +71,10 @@
         <div class="container">
           <div class="row">
             <div class="col-11 col-lg-8 col-md-10 text-center banner-contents">
-              <h1 class="animates">PTT Software Development Company</h1>
-              <h2 class="display-1 animates">We help companies to digitalize their business..</h2>
-              <p class="display-2 animates">Properly set processes.Transparent cooperation. Predictitable delivery.</p>
-              <a href="#" class="btn btn-warning btn-lg rounded-pill animates animate-btns">Get in Touch</a>
+              <h1 class="display-3 animates">PTT Software Development Company</h1>
+              <h2 class="display-1 animates delayones">We help companies to digitalize their business..</h2>
+              <p class="display-2 animates delaytwos">Properly set processes.Transparent cooperation. Predictitable delivery.</p>
+              <a href="#loginmodal" class="btn btn-warning btn-lg rounded-pill animates animate-btns" data-bs-toggle="modal">Get in Touch</a>
             </div>
           </div>
         </div>
@@ -108,6 +108,68 @@
     <!-- todo end footer section -->
     <!-- todo Start Modal Box Section -->
     <!-- ? Start get in touch modal -->
+    <!-- todo Modal Notes -->
+    <!-- 
+      Modal Size
+      (i) Standard size.
+      modal-xl
+      modal-lg
+      modal-sm
+
+      (ii) Full Size.
+      modal-fullscreen
+      modal-fullscreen-xxl-down
+      modal-fullscreen-xl-down
+      modal-fullscreen-lg-down
+      modal-fullscreen-md-down
+      modal-fullscreen-sm-down  
+
+      (iii) scroll
+      modal-dialog-scrollable
+      -->
+    <!-- ! first div ka modal ko pyout pho -->
+    <div id="loginmodal" class="modal fade">
+      <!-- ! second div modal yae size tway tat mat pho -->
+      <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-dialog-scrollable">
+        <!-- ! third div modal mar background nae shadow tway pay pho -->
+        <div class="modal-content">
+          <!-- ! modal header -->
+          <div class="modal-header">
+            <h5 class="modal-title">Login to Your Account</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <!-- ! modal body -->
+          <div class="modal-body">
+            <form action="" method="">
+              <div class="mb-3">
+                <label for="signinemail" class="form-label">Email</label>
+                <input type="text" name="signinemail" id="signinemail" class="form-control" placeholder="Enter your email" required />
+              </div>
+              <div class="mb-3">
+                <label for="signinpassword">Password</label>
+                <input type="password" name="signinpassword" id="signinpassword" class="form-control" placeholder="***********" required />
+              </div>
+              <div class="form-check mb-3">
+                <input type="checkbox" value="1" name="rememberme" id="rememeberme" class="form-check-input" />
+                <label for="rememeberme" class="form-check-label">Remember Me</label>
+              </div>
+              <!-- ! button ko a pyae paw chin yin 2 nii yay loa ya tal d-grid or w-100 -->
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Login</button>
+              </div>
+              <!-- <button type="submit" class="btn btn-primary w-100">Login in</button> -->
+            </form>
+            <div class="text-center mt-3">
+              <a href="javascript:void(0);" class="text-decoration-none text-danger">Forgot password !!</a>
+            </div>
+          </div>
+          <!-- ! modal footer -->
+          <div class="modal-footer justify-content-center">
+            <p>Don't have an account ? <a href="javascript:void(0);" class="text-decoration-none">Signup</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- ? End get in touch modal -->
     <!-- todo End Modal Box Section -->
     <!-- * bootstrap css1 js1 -->
